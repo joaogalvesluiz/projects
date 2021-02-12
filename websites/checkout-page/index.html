@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="assets/images/devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Checkout Page</title>
+  </head>
+  <body>
+
+    <div class="main">
+      <div class="container card"> 
+
+       
+
+        <!-- https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO
+        https://www.figma.com/file/4B0x88GhiZvgVlcQPSQ73D/checkout-page-challenge?node-id=1%3A9 -->
+        <div class="checkout-content grid grid-2">
+          <div class="checkout-form">
+            <h1>Checkout</h1>
+
+            <div class="checkout-shop mobile">
+              <div class="card-shopping">
+                <div class="shopping-content flex">
+                  
+                  <div class="shop-img">
+                    <img src="assets/images/photo1.png" alt="">
+                  </div>
+    
+                  <div class="shop-descr">
+                    <h4>Vintage Backpack</h4>
+                    <span class="orange">$54,99</span> <span class="small">$94,99</span>
+                      <div class="more">
+                        <button class="box lessItem">-</button>
+                          <span class="number-item">1</span>
+                        <button class="box moreItem">+</button>    
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="shopping-content flex">
+                  <div class="shop-img">
+                    <img src="assets/images/photo2.png" alt="">
+                  </div>
+    
+                  <div class="shop-descr">
+                    <h4>Levi Shoes</h4>
+                    <span class="orange">$74,99</span> <span class="small">$124,99</span>
+                    <div class="more">
+                      <button class="box lessItem">-</button>
+                      <span class="number-item">1</span>
+                      <button class="box moreItem">+</button>      
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="checklist">
+                <hr>
+                  <div class="check-item flex">
+                    <div class="title">Shipping</div>
+                    <div class="price">R$19</div>
+                  </div>
+                
+                <hr>
+                <div class="check-item flex">
+                  <div class="title">Total</div>
+                  <div class="price">$148.98</div>
+                </div>
+              </div>
+              </div>
+          </div>
+
+            <form action="form" id="form">
+              <div class="contact-form">
+                <h2 class="subtitle mt-t3">Contact information</h2>
+                <div class="form-control">
+                  <label for="input-email" class="input-label">E-mail</label><br>
+                  <label class="icon email"><i class="fas fa-envelope fa-2x"></i></label>
+                  <input type="email" id="input-email" class="input-email" required placeholder="Enter your email...">
+                </div>
+                <div class="form-control">
+                  <label for="input-phone" class="input-label">Phone</label><br>
+                  <label class="icon phone"><i class="fas fa-phone-alt fa-2x"></i></label>
+                  <input type="text" id="input-phone" class="input-phone" required placeholder="Enter your phone...">
+                </div>
+              </div>
+              
+              <div class="shipping-addres">
+                <h2 class="subtitle mt-t3">Shipping address</h2>
+                <div class="form-control">
+                  <label for="input-name" class="input-label">Full Name</label><br>
+                  <label class="icon user"><i class="fas fa-user-circle fa-2x"></i></label>
+                  <input type="text" id="input-name" class="input-name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-control">
+                  <label for="input-address" class="input-label">Address</label><br>
+                  <label class="icon home"><i class="fas fa-home fa-2x"></i></label>
+                  <input type="text" id="input-address" class="input-address" required placeholder="Your address...">
+                </div>
+                <div class="form-control">
+                  <label for="input-city" class="input-label">City</label><br>
+                  <label for="" class="icon city"><i class="fas fa-hotel fa-2x"></i></label>
+                  <input type="text" id="input-city" class="input-city" required placeholder="Your city...">
+                </div>
+
+                <div class="aside-controls grid input-grid-2">
+                  <div class="form-control">
+                    <label for="input-country" class="input-label">Country</label><br></label>
+
+                    <label for="" class="icon country"><i class="fas fa-globe-americas fa-2x"></i></label>
+
+                    <!--
+                      <select name="input-country" id="input-country" class="input-country">
+                        <option value="default" selected>Your country...</option>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                      </select>   
+                    -->
+
+                    <input type="text" id="input-country" class="input-country" required placeholder="Your country...">
+                  </div>
+                  <div class="form-control">
+                    <label for="input-postal" class="input-label">Postal code</label><br>
+                    <label class="icon postal"><i class="fas fa-mail-bulk fa-2x"></i></label>
+                    <input type="text" id="input-postal" class="input-postal" required placeholder="Your postal code...">
+                  </div>
+                </div>
+              </div>
+              <input type="checkbox" class="check mt-t2" id="check"> 
+              <label for="check">Save this information for next time</label>
+              <br>
+              <button type="submit" class="btn-submit">Continue</button>
+            </form>  
+
+          </div>
+
+          <div class="checkout-shop desktop">
+              <div class="card-shopping">
+                <div class="shopping-content flex">
+                  
+                  <div class="shop-img">
+                    <img src="assets/images/photo1.png" alt="">
+                  </div>
+
+                  <div class="shop-descr">
+                    <h4>Vintage Backpack</h4>
+                    <span class="orange">$54,99</span> <span class="small">$94,99</span>
+                      <div class="more">
+                        <button class="box lessItemD">-</button>
+                          <span class="number-itemD">1</span>
+                        <button class="box moreItemD">+</button>    
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="shopping-content flex">
+                  <div class="shop-img">
+                    <img src="assets/images/photo2.png" alt="">
+                  </div>
+
+                  <div class="shop-descr">
+                    <h4>Levi Shoes</h4>
+                    <span class="orange">$74,99</span> <span class="small">$124,99</span>
+                    <div class="more">
+                      <button class="box lessItem">-</button>
+                      <span class="number-item">1</span>
+                      <button class="box moreItem">+</button>      
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="checklist">
+                <hr>
+                  <div class="check-item flex">
+                    <div class="title">Shipping</div>
+                    <div class="price">R$19</div>
+                  </div>
+                
+                <hr>
+                <div class="check-item flex">
+                  <div class="title">Total</div>
+                  <div class="price">$148.98</div>
+                </div>
+              </div>
+              </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

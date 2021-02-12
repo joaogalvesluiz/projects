@@ -1,0 +1,241 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+input {
+  outline: none;
+}
+
+.flex{
+  display: flex; 
+} 
+
+.grid {
+  display: grid;
+}
+
+.mt-t1 {
+  margin-top: 10px;
+}
+
+.mobile {
+  display: none;
+}
+
+.mt-t2 {
+  margin-top: 20px;
+}
+
+.mt-t3 {
+  margin-top: 30px;
+}
+
+.grid-2 {
+  /* grid-template-columns: repeat(auto-fill, 500px); */
+  
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.input-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.checkout-form h1 {
+  font-size: 2.25rem;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+}
+
+.icon {
+  color: gray;
+  font-size: 1rem;
+  
+}
+
+.al-end {
+  align-items: start;
+}
+
+.container {
+  width: 1100px;
+  max-width: 100%;
+  margin: 50px auto;
+  
+}
+
+.card {
+  padding: 10px;
+}
+
+.form-control {
+  margin-top: 15px;
+  width: 100%;
+  position: relative;
+}
+
+.input-label {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.form-control .icon {
+  left: 0;
+  margin: 0.7em;
+  position: absolute;
+}
+
+.form-control .icon ~ input {
+  padding-left: 3em;
+}
+
+.form-control label {
+  font-size: 0.75rem;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #828282;
+  border-radius: 12px;
+}
+
+.btn-submit {
+  width: 166px;
+  height: 54px;
+  background-color: #F2994A;
+  color: white;
+  border: none;
+  margin-left: 23.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #c9752c;
+}
+
+#input-country {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #828282;
+  border-radius: 12px;
+}
+
+.card-shopping {
+  margin: 60px auto;
+  width: 383px;
+  height: 535px;
+  background: #F2F2F2;
+  border-radius: 12px;
+}
+
+.shop-img img {
+  width: 100%;
+  max-width: 134.21px;
+  height: 136.27px;
+  border-radius: 13px;
+}
+
+.shopping-content {
+  padding: 2rem;
+}
+
+.shop-descr {
+  margin-left: 12px;
+}
+
+.orange {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #F2994A;
+  margin-right: 10px;
+  margin-top:1 0px;
+}
+
+.small {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration-line: line-through;
+  color: #4E5150;
+}
+
+.more {
+  padding: 1rem;
+  margin-top: 3rem;
+  width: 121px;
+  height: 52px;
+  border: 1px solid #828282;
+  border-radius: 12px;
+}
+
+.box {
+  width: 21.2px;
+  height: 21.2px;
+  padding: 0px;
+  background: #E0E0E0;
+  border-radius: 4px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.box:hover {
+  background: #c7c7c7;
+}
+
+.box:not(:last-child) {
+  margin-right: 13px;
+}
+
+.more span {
+  display: inline-block;
+  margin-right: 13px;
+}
+
+.checklist {
+    padding: 2rem;
+}
+
+.check-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 375px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+  
+  .card-shopping {
+    margin: 30px 0;
+    width: 331px;
+  }
+
+  .form {
+    width: 332px;
+  }
+
+  .btn-submit {
+    margin-left: 10.5rem;
+    margin-top: 20px;
+  }
+}
